@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Forecasting</title>
+</head>
+<body>
+
+<h1>Sales Forecasting App</h1>
+
+<form action="/predict" method="post">
+
+    <input type="number" name="store_nbr" placeholder="Store Number" required><br><br>
+
+    <input type="number" name="onpromotion" placeholder="On Promotion" required><br><br>
+
+    <input type="number" name="family_encoded" placeholder="Family Encoded" required><br><br>
+
+    <input type="number" name="year" placeholder="Year" required><br><br>
+
+    <input type="number" name="month" placeholder="Month" required><br><br>
+
+    <input type="number" name="day" placeholder="Day" required><br><br>
+
+    <input type="number" name="day_of_week" placeholder="Day of Week" required><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
