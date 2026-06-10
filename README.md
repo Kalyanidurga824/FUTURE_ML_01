@@ -87,31 +87,7 @@ Better demand forecasting
 Reduced stock shortages and overstocking
 Enhanced business decision-making
 Support for sales and marketing strategies
-Project Structure
-ML_SALES_FORECAST/
-│
-├── app/
-│   ├── app.py
-│   └── templates/
-│       └── index.html
-│
-├── data/
-│   ├── train.csv
-│   ├── stores.csv
-│   ├── transactions.csv
-│   ├── holidays_events.csv
-│   ├── oil.csv
-│   └── test.csv
-│
-├── notebook/
-│   ├── sales_forecast.ipynb
-│   └── models/
-│       └── sales_model.pkl
-│
-├── static/
-├── requirements.txt
-├── README.md
-└── .gitignore
+
 Future Enhancements
 Advanced forecasting models (XGBoost, LightGBM)
 Interactive dashboards using Power BI or Tableau
