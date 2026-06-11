@@ -89,5 +89,4 @@ ml_sales_forecast/
 
 ## 🌐 Web Application
 - Local URL: http://127.0.0.1:5000  
-- Network URL: http://192.168.x.x:5000  
 ```
