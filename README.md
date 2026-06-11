@@ -1,78 +1,93 @@
-📊 Sales Demand Forecasting System
-# Project Overview
+# 📊 Sales Demand Forecasting System
 
-This project is a Machine Learning-based Sales Demand Forecasting System developed using Regression techniques.
-The system predicts future sales based on historical data, store details, promotions, product categories, and date-related features to help businesses improve inventory planning and decision-making efficiency.
+## 📌 Project Overview
+This project is a Machine Learning-based Sales Demand Forecasting System developed using regression techniques.  
+It predicts future sales based on historical data, store details, promotions, product categories, and date-related features.  
+The goal is to help businesses improve inventory planning and decision-making efficiency.
 
-# Dataset
+---
 
-• Store Sales / Retail Sales Dataset (Kaggle / Internal Sales Dataset)
+## 📂 Dataset
+- Store Sales / Retail Sales Dataset (Kaggle / Internal Sales Dataset)
 
-# Technologies Used
+---
 
-• Python
-• Pandas
-• NumPy
-• Scikit-learn
-• Flask
-• Matplotlib
-• Seaborn
-• Joblib
+## 🛠 Technologies Used
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Flask  
+- Matplotlib  
+- Seaborn  
+- Joblib  
 
-# Workflow
+---
 
-• Data Preprocessing
-• Handling Missing Values
-• Feature Engineering (Date, Month, Day, Weekday)
-• Encoding Categorical Variables
-• Train-Test Split
-• Random Forest Regression Model Training
-• Model Evaluation
-• Flask Web Application
+## 🔄 Workflow
+- Data Preprocessing  
+- Handling Missing Values  
+- Feature Engineering (Date, Month, Day, Weekday)  
+- Encoding Categorical Variables  
+- Train-Test Split  
+- Random Forest Regression Model Training  
+- Model Evaluation  
+- Flask Web Application  
 
-# Features
+---
 
-• Sales Prediction Based on Input Data
-• Store-wise Forecasting
-• Promotion Impact Analysis
-• Date-based Trend Analysis
-• Interactive Flask Web Interface
-• Real-time Prediction Output
+## 🎯 Features
+- Sales Prediction based on input data  
+- Store-wise forecasting  
+- Promotion impact analysis  
+- Date-based trend analysis  
+- Interactive Flask web interface  
+- Real-time prediction output  
 
-# Model
+---
 
-• Random Forest Regressor
+## 🤖 Model
+- Random Forest Regressor  
 
-# Accuracy
+---
 
-• R² Score: ~85–90% (depending on dataset split)
+## 📈 Accuracy
+- R² Score: ~85–90% (depending on dataset split)
 
-# How to Run
+---
+
+## 🚀 How to Run
+```bash
 pip install -r requirements.txt  
 python app/app.py  
-# Project Structure
+```
+
+---
+
+## 📁 Project Structure
+```
 ml_sales_forecast/
 │
 ├── app/
 │   └── app.py
+│
 ├── models/
 │   └── model.pkl
+│
 ├── data/
 │   └── sales.csv
+│
 ├── notebooks/
 │   └── Sales_Forecasting.ipynb
+│
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-# Future Improvements
+```
 
-• Deep Learning-based Time Series Models (LSTM, Prophet)
-• Real-time Sales Dashboard
-• Cloud Deployment (AWS / Render / Azure)
-• Automated Data Pipeline
-• Advanced Feature Engineering
+---
 
-# Web Application
-
-• Local URL: http://127.0.0.1:5000
-• Network URL: http://192.168.x.x:5000
+## 🌐 Web Application
+- Local URL: http://127.0.0.1:5000  
+- Network URL: http://192.168.x.x:5000  
+```
