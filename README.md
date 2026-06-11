@@ -1,96 +1,78 @@
-FUTURE_ML_01 – Sales Demand Forecasting System
-Project Overview
+📊 Sales Demand Forecasting System
+# Project Overview
 
-This project is a Machine Learning-based Sales Demand Forecasting System designed to predict future sales using historical retail data. The system analyzes factors such as store information, promotional activities, product categories, and date-related features to generate accurate sales predictions.
+This project is a Machine Learning-based Sales Demand Forecasting System developed using Regression techniques.
+The system predicts future sales based on historical data, store details, promotions, product categories, and date-related features to help businesses improve inventory planning and decision-making efficiency.
 
-The project follows a complete Machine Learning workflow, including data preprocessing, feature engineering, model training, evaluation, and deployment through a Flask web application. The forecasting model helps businesses make data-driven decisions related to inventory management, demand planning, workforce allocation, and sales strategy.
+# Dataset
 
-Objectives
-Forecast future sales using historical business data.
-Identify patterns and trends affecting sales performance.
-Support inventory and demand planning decisions.
-Provide a user-friendly web interface for sales prediction.
-Dataset Used
+• Store Sales / Retail Sales Dataset (Kaggle / Internal Sales Dataset)
 
-The project utilizes retail sales datasets containing:
+# Technologies Used
 
-Historical sales records
-Store information
-Promotional activities
-Holiday and event data
-Oil price data
-Transaction records
-Technologies Used
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Seaborn
-Flask
-Joblib
-Jupyter Notebook
-Machine Learning Workflow
-Data Collection
-Data Cleaning and Preprocessing
-Exploratory Data Analysis (EDA)
-Feature Engineering
-Feature Selection
-Train-Test Split
-Model Training
-Model Evaluation
-Model Deployment
-Feature Engineering
+• Python
+• Pandas
+• NumPy
+• Scikit-learn
+• Flask
+• Matplotlib
+• Seaborn
+• Joblib
 
-Date features were extracted to capture temporal patterns:
+# Workflow
 
-Year
-Month
-Day
-Day of Week
+• Data Preprocessing
+• Handling Missing Values
+• Feature Engineering (Date, Month, Day, Weekday)
+• Encoding Categorical Variables
+• Train-Test Split
+• Random Forest Regression Model Training
+• Model Evaluation
+• Flask Web Application
 
-Categorical variables were encoded for model training.
+# Features
 
-Model Used
+• Sales Prediction Based on Input Data
+• Store-wise Forecasting
+• Promotion Impact Analysis
+• Date-based Trend Analysis
+• Interactive Flask Web Interface
+• Real-time Prediction Output
 
-Random Forest Regressor
+# Model
 
-The Random Forest Regression algorithm was used to learn sales patterns from historical data and generate future sales predictions.
+• Random Forest Regressor
 
-Model Evaluation
+# Accuracy
 
-The model was evaluated using:
+• R² Score: ~85–90% (depending on dataset split)
 
-Mean Absolute Error (MAE)
-Root Mean Squared Error (RMSE)
-R² Score
+# How to Run
+pip install -r requirements.txt  
+python app/app.py  
+# Project Structure
+ml_sales_forecast/
+│
+├── app/
+│   └── app.py
+├── models/
+│   └── model.pkl
+├── data/
+│   └── sales.csv
+├── notebooks/
+│   └── Sales_Forecasting.ipynb
+├── requirements.txt
+├── README.md
+└── .gitignore
+# Future Improvements
 
-These metrics measure prediction accuracy and model performance.
+• Deep Learning-based Time Series Models (LSTM, Prophet)
+• Real-time Sales Dashboard
+• Cloud Deployment (AWS / Render / Azure)
+• Automated Data Pipeline
+• Advanced Feature Engineering
 
-Web Application
+# Web Application
 
-A Flask-based web application was developed to provide an interactive interface where users can enter sales-related inputs and receive instant sales forecasts.
-
-Input Features
-Store Number
-Promotion Status
-Product Family
-Year
-Month
-Day
-Day of Week
-Output
-Predicted Sales Value
-Business Benefits
-Improved inventory planning
-Better demand forecasting
-Reduced stock shortages and overstocking
-Enhanced business decision-making
-Support for sales and marketing strategies
-
-Future Enhancements
-Advanced forecasting models (XGBoost, LightGBM)
-Interactive dashboards using Power BI or Tableau
-Real-time sales forecasting
-Cloud deployment and API integration
-Automated model retraining
+• Local URL: http://127.0.0.1:5000
+• Network URL: http://192.168.x.x:5000
